@@ -1,6 +1,6 @@
 //Author: Jordan Sze
 //Professor Melissa Lynch
-//CSCI 39457
+//CSCI 39547
 //Assignment #2
 //Recreation of several common javascript methods without using the respective method for each function
 
