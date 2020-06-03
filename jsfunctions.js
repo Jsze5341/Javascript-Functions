@@ -138,18 +138,3 @@ function myUnshift(array)
     return -1;
 
 }
-
-/*function getKey(object)
-{
-    return key;
-}
-
-function setKey(object)
-{
-    key_ = key;
-}
-
-function grabKeys(object)
-{
-
-}*/
