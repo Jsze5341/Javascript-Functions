@@ -32,11 +32,8 @@ function myMap(callback, array)
 {
     var mapArray = [];
     for (let i = 0; i < array.length; i++) 
-    {
-        const mapArray = callback(array[i]);
         mapArray.push(mapArray);
-    }
-
+    
     return mapArray;
 }
 
