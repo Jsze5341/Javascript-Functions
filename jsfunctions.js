@@ -41,7 +41,7 @@ function myMap(callback, array)
 }
 
 //Filter
-//Filters when callback is applied to specific array element
+//Pushes to filtered array when callback is applied to specific array element
 function myFilter(callback, array)
 {
 
