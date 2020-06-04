@@ -23,9 +23,7 @@ function test(arg)
 function myEach(callback, array)
 {
     for (let i = 0; i < array.length; i++) 
-    {
         callback(array[i]);
-    }
 }
 
 //Map
@@ -52,9 +50,7 @@ function myFilter(callback, array)
         var funct = callback(array[i]);
         
         if(funct)
-        {
             filteredArray.push(funct);
-        }
     }
 
     return filteredArray;
