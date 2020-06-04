@@ -86,8 +86,10 @@ function myEvery(callback, array)
 //Sum of all array elements
 function myReduce(array)
 {
-    var sum = 0;
-    for(let i = 0; i < array.length; i++) 
+    //Starts at first index to accomodate for
+    //any variable type
+    var sum = array[0];
+    for(let i = 1; i < array.length; i++) 
         sum += array[i];
 
     return sum;
