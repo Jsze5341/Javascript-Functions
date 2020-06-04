@@ -6,11 +6,11 @@
 
 
 var numbers = [1, 2, 3, 4, 11, 12, 13, 14]; // array use
-const object = {
-    a: 'somestring',
-    b: 42,
-    c: false
-  }; // object use
+const objected = {
+    a: 1,
+    b: 2,
+    c: 3
+  };// object use
 
 //Use in place of callback arguments
 function test(arg)
@@ -144,4 +144,23 @@ function myUnshift(array, element)
 
     return -1;
 
+}
+
+//keys
+//Returns all key values of object
+function grabKeys(object)
+{
+    return Object.getOwnPropertyNames(object);
+}
+
+//values
+//Pushes all values found into value array and returns that array
+function grabValues(object)
+{
+    var valueArray= [];
+
+    for (var key of Object.keys(object)) 
+        valueArray.push(object[key]);
+
+    return valueArray;
 }
