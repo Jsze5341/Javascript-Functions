@@ -103,7 +103,7 @@ function myIncludes(array, element)
 {
     for(let i = 0; i < array.length; i++) 
     {
-        if ((array[i] = element))
+        if ((array[i] == element))
             return true;
     }
 
