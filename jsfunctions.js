@@ -111,12 +111,12 @@ function myIncludes(array, element)
 }
 
 //indexOf
-//Returns index of first array element
-function myindexOf(array)
+//Returns index of first instance of specified element in array
+function myindexOf(array, element)
 {
     for(let i = 0; i < array.length; i++) 
     {
-        if (array[i])
+        if (array[i] == element)
             return i;
     }
 
@@ -132,15 +132,14 @@ function myPush(array, elementToAdd)
 }
 
 //lastIndexOf
-//Returns index of final array element
-function myUnshift(array)
+//Returns index of last instance of specified element in array
+function myUnshift(array, element)
 {
-    var lastIndex = array[array.length - 1]
 
-    for(let i = 0; i < array.length; i++) 
+    for(let i = array.length; i > 0; i--) 
     {
-        if (i = lastIndex)
-            return array.length - 1;
+        if (array[i] == element)
+            return i
     }
 
     return -1;
