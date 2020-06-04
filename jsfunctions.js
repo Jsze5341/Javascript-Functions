@@ -35,7 +35,7 @@ function myMap(callback, array)
     var mapArray = [];
     
     for (let i = 0; i < array.length; i++) 
-        mapArray.push(mapArray);
+        mapArray.push(callback(array[i]));
     
     return mapArray;
 }
