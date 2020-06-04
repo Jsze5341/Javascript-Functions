@@ -19,6 +19,7 @@ function test(arg)
 }
 
 //forEach
+//Applies callback to each array element
 function myEach(callback, array)
 {
     for (let i = 0; i < array.length; i++) 
@@ -28,9 +29,11 @@ function myEach(callback, array)
 }
 
 //Map
+//Pushes each array element to a new mapped array
 function myMap(callback, array)
 {
     var mapArray = [];
+    
     for (let i = 0; i < array.length; i++) 
         mapArray.push(mapArray);
     
@@ -38,6 +41,7 @@ function myMap(callback, array)
 }
 
 //Filter
+//Filters when callback is applied to specific array element
 function myFilter(callback, array)
 {
 
@@ -57,6 +61,7 @@ function myFilter(callback, array)
 }
 
 //Some or Any
+//Returns true if callbacked element is found
 function mySome(callback, array)
 {
     for(let i = 0; i < array.length; i++) 
@@ -69,6 +74,7 @@ function mySome(callback, array)
 }
 
 //Every
+//Returns false if there is no callbacked element found
 function myEvery(callback, array)
 {
     for(let i = 0; i < array.length; i++) 
@@ -81,6 +87,7 @@ function myEvery(callback, array)
 }
 
 //Reduce
+//Sum of all array elements
 function myReduce(array)
 {
     var sum = 0;
@@ -91,6 +98,7 @@ function myReduce(array)
 }
 
 //Includes
+//Returns true if specified element is found in array
 function myIncludes(array, element)
 {
     for(let i = 0; i < array.length; i++) 
@@ -103,6 +111,7 @@ function myIncludes(array, element)
 }
 
 //indexOf
+//Returns index of first array element
 function myindexOf(array)
 {
     for(let i = 0; i < array.length; i++) 
@@ -115,6 +124,7 @@ function myindexOf(array)
 }
 
 //Push
+//Adds element to array and returns the modified array
 function myPush(array, elementToAdd)
 {
     array[array.length] = elementToAdd;
@@ -122,6 +132,7 @@ function myPush(array, elementToAdd)
 }
 
 //lastIndexOf
+//Returns index of final array element
 function myUnshift(array)
 {
     var lastIndex = array[array.length - 1]
