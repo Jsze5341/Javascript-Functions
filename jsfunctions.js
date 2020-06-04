@@ -51,7 +51,7 @@ function myFilter(callback, array)
     {
         var funct = callback(array[i]);
         
-        if(callback(array[i]))
+        if(funct)
         {
             filteredArray.push(funct);
         }
